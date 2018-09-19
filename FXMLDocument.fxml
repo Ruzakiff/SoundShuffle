@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soundshuffle.SoundShuffle">
+    <children>
+        <Button fx:id="play" alignment="CENTER" layoutX="107.0" layoutY="80.0" onAction="#play_trigger" prefHeight="27.0" prefWidth="95.0" text="Play" wrapText="true" />
+      <Button layoutX="131.0" layoutY="116.0" mnemonicParsing="false" onAction="#next_song" text="Next" />
+      <Button layoutX="119.0" layoutY="41.0" mnemonicParsing="false" onAction="#prev_song" onMouseClicked="#prev_song" text="Previous" />
+      <Label fx:id="songName" alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="42.0" prefWidth="320.0" textAlignment="CENTER" wrapText="true" />
+    </children>
+</AnchorPane>
