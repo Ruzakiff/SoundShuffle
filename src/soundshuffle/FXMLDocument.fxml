@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" prefHeight="250.0" prefWidth="312.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soundshuffle.SoundShuffle">
+    <children>
+        <Button fx:id="play" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="181.0" onAction="#play_trigger" prefHeight="42.0" prefWidth="86.0" text="Play" wrapText="true" />
+      <Button layoutX="214.0" layoutY="188.0" mnemonicParsing="false" onAction="#next_song" prefHeight="27.0" prefWidth="71.0" text="Next" />
+      <Button layoutX="58.0" layoutY="188.0" mnemonicParsing="false" onAction="#prev_song" onMouseClicked="#prev_song" text="Previous" />
+      <Label fx:id="songName" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="100.0" prefHeight="42.0" prefWidth="340.0" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="artistName" alignment="CENTER" contentDisplay="CENTER" layoutY="142.0" prefHeight="34.0" prefWidth="340.0" textAlignment="CENTER" wrapText="true" />
+      <TextField fx:id="search" layoutY="29.0" onAction="#searchVis" prefHeight="27.0" prefWidth="342.0" promptText="Search:" />
+      <Button contentDisplay="CENTER" layoutX="158.0" layoutY="69.0" mnemonicParsing="false" onAction="#good" text=":)" textAlignment="CENTER" />
+      <Label fx:id="genreName" alignment="CENTER" layoutY="69.0" prefHeight="27.0" prefWidth="152.0" />
+      <MenuBar prefHeight="29.0" prefWidth="342.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#import_songs" text="Import" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>
